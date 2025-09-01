@@ -15,7 +15,7 @@ public class GraphAdjacencyList {
         adjacencyList = new HashMap<>();
     }
       void addEdge(int u, int v){
-        adjacencyList.computeIfAbsent(u, _->  new ArrayList<>()).add(v);
+        adjacencyList.computeIfAbsent(u, k->  new ArrayList<>()).add(v);
     }
 
     void printGraph(){

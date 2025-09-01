@@ -1,9 +1,7 @@
 
 //Implenting undirected graph by adjacency matrix
 
-package graph;
-
- class GraphFromEdgeList {
+ public class GraphAdjacencyMatrix {
     private int[][] adjacencyMatrix;
     private int vertices;
 
@@ -14,7 +12,7 @@ package graph;
         adjacencyMatrix[u][v] = 1;
     }
 
-    public GraphFromEdgeList(int vertices) {
+    public GraphAdjacencyMatrix(int vertices) {
         this.vertices = vertices;
         adjacencyMatrix = new int [vertices][vertices];
     }
@@ -49,7 +47,7 @@ package graph;
                 maxVertex=edge[1];
             }
         }
-        GraphFromEdgeList graph = new GraphFromEdgeList(maxVertex);
+        GraphAdjacencyMatrix graph = new GraphAdjacencyMatrix(maxVertex);
         for(int[] edge : edgeList) {
             graph.addEdge(edge[0], edge[1]);
             graph.addEdge(edge[1], edge[0]);
