@@ -1,4 +1,4 @@
-
+package graph;
 //Implenting undirected graph by adjacency matrix
 
  public class GraphAdjacencyMatrix {
